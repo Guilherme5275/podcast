@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Vídeo Interativo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .video-container {
+            margin-top: 50px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function curtirVideo() {
+            alert("Você curtiu este vídeo!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Assista ao Vídeo</h1>
+    
+    <div class="video-container">
+        <!-- Insira o link do vídeo desejado no src abaixo -->
+        <video width="640" height="360" controls>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+    
+    <button onclick="curtirVideo()">Curtir ❤️</button>
+</body>
+</html>
